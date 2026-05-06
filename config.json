@@ -1,0 +1,42 @@
+{
+  "sample_rate": 16000,
+  "block_size": 1024,
+  "channels": 1,
+  "vad_threshold": 0.015,
+  "vad_silence_ms": 800,
+  "vad_min_speech_ms": 300,
+  "max_buffer_sec": 30,
+  "whisper_model": "base",
+  "whisper_device": "cpu",
+  "whisper_compute": "int8",
+  "profanity_words": [
+    "他妈",
+    "你妈",
+    "操你",
+    "傻逼",
+    "妈的",
+    "cao",
+    "fuck",
+    "shit",
+    "damn",
+    "bitch"
+  ],
+  "replacement_type": "bird",
+  "replacement_file": "replacements/bird.wav",
+  "output_delay_ms": 0,
+  "input_device": 2,
+  "output_device": 10,
+  "window_sec": 0.5,
+  "hop_sec": 0.1,
+  "min_positive_windows": 3,
+  "output_delay_sec": 1.0,
+  "threshold_override": 0.85,
+  "feature_type": "hubert",
+  "model_path": "model_hubert.pth",
+  "train": {
+    "features": "hubert",
+    "epochs": 100,
+    "lr": 0.001,
+    "batch_size": 16
+  }
+}
