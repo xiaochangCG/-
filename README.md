@@ -25,7 +25,7 @@
 pip install torch transformers sounddevice soundfile pydub numpy
 ```
 
-首次运行需要下载 HuBERT 模型（`facebook/hubert-base-ls960`，~360MB），运行库中_download_hubert.py即自动下载。
+首次运行需要下载 HuBERT 模型（`facebook/hubert-base-ls960`，~360MB），运行库中_download_hubert.py即自动下载（release版无需下载）。
 
 ## 快速开始
 
